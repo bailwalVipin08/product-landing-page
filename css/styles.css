@@ -1,0 +1,102 @@
+/*
+
+0     -  600px  PHONE
+600   -  900px  TABLET PORTRAIT
+900px -  1200px TABLET LANDSCAPE
+1200  -  1800px NORMAL STYLES
+1800px+         BIG DESKTOPS
+
+
+1em = 16px
+600px = 37.5em
+900 = 56.25em
+1200 = 75em
+1800 = 112.5em
+
+*/
+.header {
+  background-color: #eae7e1;
+  height: 20vh;
+  font-size: 1.6rem;
+  padding: 2rem;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  @media (max-width: 56.25em) {
+    .header {
+      font-size: 1.2rem; } }
+  .header__logo-container {
+    display: flex;
+    align-items: center; }
+    .header__logo-container #header-img {
+      width: 100%;
+      max-width: 100%;
+      height: auto; }
+      @media (max-width: 56.25em) {
+        .header__logo-container #header-img {
+          width: 80%; } }
+    .header__logo-container .toggle-btn {
+      display: none;
+      background-color: transparent;
+      color: #343fdb;
+      border: none;
+      font-size: 4rem;
+      cursor: pointer;
+      order: 2; }
+      .header__logo-container .toggle-btn:focus, .header__logo-container .toggle-btn:active {
+        outline: none; }
+      @media (max-width: 56.25em) {
+        .header__logo-container .toggle-btn {
+          display: block; } }
+    @media (max-width: 56.25em) {
+      .header__logo-container {
+        justify-content: space-around;
+        width: 100%; } }
+
+.nav-bar__list {
+  display: flex;
+  justify-content: space-around; }
+  @media (max-width: 56.25em) {
+    .nav-bar__list {
+      display: none; } }
+
+.nav-bar__item {
+  list-style: none;
+  padding: 2rem; }
+  .nav-bar__item--link {
+    text-decoration: none;
+    color: #030303cc; }
+    .nav-bar__item--link:hover {
+      color: #3498db; }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+
+body {
+  background-color: #fff;
+  font-family: "Poppins", sans-serif; }
+  @media (max-width: 75em) {
+    body {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    body {
+      font-size: 50%;
+      padding: 0; } }

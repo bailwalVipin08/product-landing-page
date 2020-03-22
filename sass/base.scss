@@ -1,0 +1,54 @@
+@import 'variables';
+@import 'media-manager';
+@import 'typography';
+@import 'header';
+@import 'hero';
+@import 'features';
+@import 'benefits';
+@import 'plans';
+@import 'contact';
+@import 'footer';
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //1 rem = 10px
+  scroll-behavior: smooth;
+
+  @include respond(tab-land) {
+    font-size: 56.25%;
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%;
+  }
+
+  @include respond(bid-desktop) {
+    font-size: 75%;
+  }
+}
+
+body {
+  background-color: #fff;
+  font-family: $font-stack;
+
+  @include respond(tab-land) {
+    font-size: 56.25%;
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%;
+    padding: 0;
+  }
+
+  @include respond(bid-desktop) {
+    font-size: 75%;
+  }
+}
