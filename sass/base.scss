@@ -2,6 +2,7 @@
 @import 'media-manager';
 @import 'typography';
 @import 'header';
+@import 'mobile-menu';
 @import 'hero';
 @import 'features';
 @import 'benefits';
@@ -36,7 +37,7 @@ html {
 }
 
 body {
-  background-color: #fff;
+  background-color: $color-grey;
   font-family: $font-stack;
 
   @include respond(tab-land) {
