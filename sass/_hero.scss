@@ -2,16 +2,20 @@
   padding-top: 15rem;
   display: flex;
   align-items: center;
+  justify-content: center;
 
-  .hero-image {
-    max-width: 100%;
-    width: 100%;
-    height: auto;
-    padding: 4rem;
+  .img-container {
+    .hero-image {
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+      padding-left: 8rem;
+      padding-right: 4rem
+    }
   }
 
   .content-container {
-    padding: 4rem 6rem;
+    padding: 4rem;
     width: 100%;
 
     .intro-text {
@@ -34,9 +38,5 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-  }
-
-  @include respond(tab-port) {
-   
   }
 }

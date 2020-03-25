@@ -54,3 +54,23 @@
     margin: 0 auto;
   }
 }
+
+.plan-btn {
+  padding: 1rem;
+  border: 0.2rem solid #fff;
+  background-color: transparent;
+  border-radius: 0.5rem;
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.plan-btn:hover {
+  background-color: #fff;
+  color: #0a0a23;
+}
+
+.plan-btn:focus,
+.plan-btn:active {
+  outline: none;
+}

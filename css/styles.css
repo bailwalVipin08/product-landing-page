@@ -151,14 +151,16 @@
 #hero {
   padding-top: 15rem;
   display: flex;
-  align-items: center; }
-  #hero .hero-image {
+  align-items: center;
+  justify-content: center; }
+  #hero .img-container .hero-image {
     max-width: 100%;
     width: 100%;
     height: auto;
-    padding: 4rem; }
+    padding-left: 8rem;
+    padding-right: 4rem; }
   #hero .content-container {
-    padding: 4rem 6rem;
+    padding: 4rem;
     width: 100%; }
     #hero .content-container .intro-text {
       font-family: "Lato", sans-serif;
@@ -217,6 +219,23 @@
   @media (max-width: 37.5em) {
     .cta-btn {
       margin: 0 auto; } }
+
+.plan-btn {
+  padding: 1rem;
+  border: 0.2rem solid #fff;
+  background-color: transparent;
+  border-radius: 0.5rem;
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer; }
+
+.plan-btn:hover {
+  background-color: #fff;
+  color: #0a0a23; }
+
+.plan-btn:focus,
+.plan-btn:active {
+  outline: none; }
 
 #features {
   width: 100%;
@@ -281,6 +300,65 @@
 
 .block-right {
   text-align: right; }
+
+#pricing {
+  width: 100%;
+  padding: 8rem 2rem;
+  display: flex;
+  flex-direction: column; }
+  #pricing .plans-container {
+    margin: 5rem auto 4rem auto;
+    display: flex;
+    align-items: center; }
+    #pricing .plans-container .plan {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-width: 45rem;
+      width: 38rem;
+      border: 0.1rem solid #1c2331;
+      border-radius: 0.3rem;
+      padding: 3rem 4rem;
+      color: #fff;
+      position: relative;
+      margin: 4rem 1.5rem;
+      font-size: 1.6rem; }
+      #pricing .plans-container .plan-basic, #pricing .plans-container .plan-premium {
+        background-color: #1c2331; }
+      #pricing .plans-container .plan-plus {
+        background-color: #0a0a23;
+        box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.6); }
+      #pricing .plans-container .plan__title {
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        padding: 2rem;
+        color: coral; }
+      #pricing .plans-container .plan__price {
+        padding: 2rem; }
+        #pricing .plans-container .plan__price span {
+          font-size: 5rem; }
+      #pricing .plans-container .plan__features {
+        padding: 2rem;
+        line-height: 1.8; }
+      #pricing .plans-container .plan__feature {
+        list-style: none;
+        text-align: center; }
+      #pricing .plans-container .plan__annotation {
+        background-color: #eee;
+        text-align: center;
+        border-radius: 0.5rem;
+        width: 100%;
+        color: #1c2331;
+        box-shadow: 0.2rem 0.4rem 0.5rem #51cbee;
+        padding: 1rem;
+        border: 1px solid #51cbee; }
+      @media (max-width: 56.25em) {
+        #pricing .plans-container .plan {
+          width: 50rem; } }
+    @media (max-width: 56.25em) {
+      #pricing .plans-container {
+        flex-direction: column; } }
 
 *,
 *::before,
