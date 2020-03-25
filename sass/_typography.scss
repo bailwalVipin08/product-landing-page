@@ -1,0 +1,23 @@
+%heading {
+  font: inherit;
+  font-weight: bold;
+}
+
+.heading-primary {
+  @extend %heading;
+  font-size: 4.5rem;
+  color: $color-primary;
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: capitalize;
+}
+
+.intro-text {
+  margin: 2rem auto;
+  font-size: 2rem;
+  width: 100%;
+  opacity: 0.8;
+  line-height: 1.5;
+}

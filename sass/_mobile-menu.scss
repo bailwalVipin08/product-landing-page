@@ -27,6 +27,10 @@
       }
     }
   }
+
+  @include respond(phone) {
+    width: 50%;
+  }
 }
 
 .mobile-nav-open {

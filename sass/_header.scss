@@ -1,6 +1,6 @@
 #header {
   background-color: $color-grey;
-  height: 20vh;
+  height: 15  vh;
   font-size: 1.6rem;
   padding: 2rem;
   position: fixed;
@@ -43,11 +43,12 @@
 
       @include respond(tab-port) {
         display: block;
+        padding-right: 3rem;
       }
     }
 
     @include respond(tab-port) {
-      justify-content: space-around;
+      justify-content: space-between ;
       width: 100%;
     }
   }

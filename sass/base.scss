@@ -4,6 +4,7 @@
 @import 'header';
 @import 'mobile-menu';
 @import 'hero';
+@import 'buttons';
 @import 'features';
 @import 'benefits';
 @import 'plans';
@@ -31,14 +32,14 @@ html {
     font-size: 50%;
   }
 
-  @include respond(bid-desktop) {
+  @include respond(big-desktop) {
     font-size: 75%;
   }
 }
 
 body {
   background-color: $color-grey;
-  font-family: $font-stack;
+  font-family: $font-stack-1;
 
   @include respond(tab-land) {
     font-size: 56.25%;
