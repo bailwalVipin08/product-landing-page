@@ -1,3 +1,23 @@
+.toggle-btn {
+  display: none;
+  background-color: transparent;
+  color: $color-secondary;
+  border: none;
+  font-size: 6rem;
+  cursor: pointer;
+  order: 2;
+
+  &:focus,
+  &:active {
+    outline: none;
+  }
+
+  @include respond(tab-port) {
+    display: block;
+    padding-right: 3rem;
+  }
+}
+
 .cta-btn {
   padding: 1.6rem;
   font-size: 2rem;

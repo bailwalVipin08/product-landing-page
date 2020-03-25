@@ -1,7 +1,7 @@
 #header {
   background-color: $color-grey;
-  height: 15  vh;
-  font-size: 1.6rem;
+  height: 13vh;
+  font-size: 2rem;
   padding: 2rem;
   position: fixed;
   width: 100%;
@@ -27,28 +27,8 @@
       }
     }
 
-    .toggle-btn {
-      display: none;
-      background-color: transparent;
-      color: $color-secondary;
-      border: none;
-      font-size: 4rem;
-      cursor: pointer;
-      order: 2;
-
-      &:focus,
-      &:active {
-        outline: none;
-      }
-
-      @include respond(tab-port) {
-        display: block;
-        padding-right: 3rem;
-      }
-    }
-
     @include respond(tab-port) {
-      justify-content: space-between ;
+      justify-content: space-between;
       width: 100%;
     }
   }

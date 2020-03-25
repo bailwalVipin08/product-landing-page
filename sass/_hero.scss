@@ -20,7 +20,7 @@
 
     .intro-text {
       font-family: $font-stack-2;
-      text-align: justify;
+      text-align: left;
 
       @include respond(phone) {
         text-align: center;
