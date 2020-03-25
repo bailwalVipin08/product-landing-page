@@ -1,0 +1,72 @@
+#contact {
+  width: 100%;
+  padding: 8rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .contact-details {
+    display: flex;
+    align-items: center;
+    padding-top: 4rem;
+
+    #contact-form {
+      display: flex;
+      flex-direction: column;
+      padding: 4rem;
+      width: 100%;
+      background-color: #4b77be;
+      border-radius: 0.5rem;
+      box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.25);
+      align-items: center;
+
+      .contact-image {
+        width: 50%;
+      }
+
+      input[type='email'] {
+        padding: 1.5rem;
+        width: 80%;
+        margin: 2rem auto;
+        border: 1.5px solid #4b77be;
+        border-radius: 0.5rem;
+        font-size: 1.6rem;
+        @include respond(phone) {
+            width: 100%;
+          }
+      }
+
+      input:focus {
+        outline: none;
+        background-color: #eee;
+      }
+
+      input[type='submit'] {
+        padding: 1.5rem;
+        border: none;
+        border-radius: 2rem;
+        width: 50%;
+        cursor: pointer;
+        font-size: 1.6rem;
+        color: #4b77be;
+        transition: all 0.3s;
+      }
+
+      #submit:hover {
+        transform: translateY(-0.2rem);
+        box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.25);
+
+        background-color: #fff;
+      }
+
+      #submit:active {
+        transform: translateY(-0.1rem);
+        box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.25);
+      }
+
+      @include respond(phone) {
+          padding: 2rem;
+      }
+    }
+  }
+}

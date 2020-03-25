@@ -41,4 +41,7 @@
       }
     }
   }
+  @include respond(phone) {
+    align-items: center;
+  }
 }

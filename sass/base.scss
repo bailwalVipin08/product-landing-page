@@ -65,10 +65,11 @@ body {
   margin: 4rem auto;
   opacity: 0.8;
   line-height: 1.5;
-
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
   @include respond(tab-port) {
     justify-content: space-between;
-    text-align: justify;
-    width: 80%;
+    width: 90%;
   }
 }
