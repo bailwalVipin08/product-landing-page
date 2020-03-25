@@ -6,7 +6,6 @@
   align-items: center;
 
   .plans-container {
-    margin: 5rem auto 4rem auto;
     display: flex;
     align-items: center;
 
@@ -77,7 +76,7 @@
 
       @include respond(phone) {
         width: 34rem;
-    }
+      }
     }
 
     @include respond(tab-port) {

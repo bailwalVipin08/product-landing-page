@@ -1,0 +1,50 @@
+#footer {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+  padding: 1rem;
+  background-color: #eae7e1;
+  width: 100%;
+  align-items: flex-end;
+  border-top: 0.13rem solid #888888;
+  .footer-nav {
+    margin: 2rem;
+    display: flex;
+
+    &-item {
+      padding-left: 4rem;
+      list-style: none;
+    }
+
+    .footer-link {
+      &:link,
+      &:visited {
+        text-decoration: none;
+        color: #000;
+      }
+
+      &:hover {
+        color: #3498db;
+      }
+    }
+
+    @include respond(tab-port) {
+      display: flex;
+      flex-direction: column;
+      line-height: 2;
+      text-align: center;
+    }
+  }
+
+  .copyright-info {
+    padding-right: 2rem;
+    @include respond(tab-port) {
+      padding-right: 0;
+      padding-left: 2.5rem;
+    }
+  }
+
+  @include respond(tab-port) {
+    align-items: center;
+  }
+}

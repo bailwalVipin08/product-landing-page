@@ -46,7 +46,7 @@
 #header {
   background-color: #eae7e1;
   height: 13vh;
-  font-size: 2rem;
+  font-size: 1.8rem;
   padding: 2rem;
   position: fixed;
   width: 100%;
@@ -311,7 +311,6 @@
   flex-direction: column;
   align-items: center; }
   #pricing .plans-container {
-    margin: 5rem auto 4rem auto;
     display: flex;
     align-items: center; }
     #pricing .plans-container .plan {
@@ -406,7 +405,7 @@
         padding: 1.5rem;
         border: none;
         border-radius: 2rem;
-        width: 50%;
+        width: 30%;
         cursor: pointer;
         font-size: 1.6rem;
         color: #4b77be;
@@ -421,6 +420,42 @@
       @media (max-width: 37.5em) {
         #contact .contact-details #contact-form {
           padding: 2rem; } }
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+  padding: 1rem;
+  background-color: #eae7e1;
+  width: 100%;
+  align-items: flex-end;
+  border-top: 0.13rem solid #888888; }
+  #footer .footer-nav {
+    margin: 2rem;
+    display: flex; }
+    #footer .footer-nav-item {
+      padding-left: 4rem;
+      list-style: none; }
+    #footer .footer-nav .footer-link:link, #footer .footer-nav .footer-link:visited {
+      text-decoration: none;
+      color: #000; }
+    #footer .footer-nav .footer-link:hover {
+      color: #3498db; }
+    @media (max-width: 56.25em) {
+      #footer .footer-nav {
+        display: flex;
+        flex-direction: column;
+        line-height: 2;
+        text-align: center; } }
+  #footer .copyright-info {
+    padding-right: 2rem; }
+    @media (max-width: 56.25em) {
+      #footer .copyright-info {
+        padding-right: 0;
+        padding-left: 2.5rem; } }
+  @media (max-width: 56.25em) {
+    #footer {
+      align-items: center; } }
 
 *,
 *::before,
@@ -459,7 +494,7 @@ body {
 
 .description {
   font-family: "Lato", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: #040404d9;
   margin: 4rem auto;
   opacity: 0.8;
