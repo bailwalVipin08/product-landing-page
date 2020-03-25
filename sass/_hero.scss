@@ -1,8 +1,10 @@
 #hero {
+  padding: 2rem 2rem;
   padding-top: 15rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 
   .img-container {
     .hero-image {
@@ -10,7 +12,7 @@
       width: 100%;
       height: auto;
       padding-left: 8rem;
-      padding-right: 4rem
+      padding-right: 4rem;
     }
   }
 
@@ -18,16 +20,7 @@
     padding: 4rem;
     width: 100%;
 
-    .intro-text {
-      font-family: $font-stack-2;
-      text-align: left;
-
-      @include respond(phone) {
-        text-align: center;
-      }
-    }
-
-    @include respond(phone) {
+    @include respond(tab-port) {
       .heading-primary {
         font-size: 4rem;
       }

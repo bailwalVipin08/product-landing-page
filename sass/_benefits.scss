@@ -1,7 +1,7 @@
 #benefits {
   width: 100%;
   display: flex;
-  padding: 8rem 2rem;
+  padding: 2rem 2rem;
   flex-direction: column;
 
   .benefit-container {
@@ -9,7 +9,7 @@
     align-items: center;
 
     .benefit {
-      padding: 8rem 6rem;
+      padding: 4rem;
       width: 100%;
     }
 
@@ -20,6 +20,7 @@
       padding: 2rem;
       @include respond(phone) {
         order: -1;
+        width: 80%;
       }
     }
 
@@ -27,6 +28,11 @@
       flex-direction: column;
       text-align: center;
     }
+  }
+  @include respond(phone) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }
 

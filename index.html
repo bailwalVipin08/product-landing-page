@@ -15,6 +15,7 @@
     />
     <link rel="stylesheet" href="css/styles.css" />
     <script src="js/index.js" defer></script>
+    <script src="js/bundle.js" defer></script>
   </head>
   <body>
     <div class="backdrop"></div>
@@ -29,19 +30,23 @@
       <nav id="nav-bar" class="nav-bar">
         <ul class="nav-bar__list">
           <li class="nav-bar__item">
-            <a href="#" class="nav-bar__item--link">Home</a>
+            <a href="#hero" class="nav-bar__item--link nav-link">Home</a>
           </li>
           <li class="nav-bar__item">
-            <a href="#" class="nav-bar__item--link">Features</a>
+            <a href="#features" class="nav-bar__item--link nav-link"
+              >Features</a
+            >
           </li>
           <li class="nav-bar__item">
-            <a href="#" class="nav-bar__item--link">Benefits</a>
+            <a href="#benefits" class="nav-bar__item--link nav-link"
+              >Benefits</a
+            >
           </li>
           <li class="nav-bar__item">
-            <a href="#" class="nav-bar__item--link">Pricing</a>
+            <a href="#pricing" class="nav-bar__item--link nav-link">Pricing</a>
           </li>
           <li class="nav-bar__item">
-            <a href="#" class="nav-bar__item--link">Contact</a>
+            <a href="#contact" class="nav-bar__item--link nav-link">Contact</a>
           </li>
         </ul>
       </nav>
@@ -79,8 +84,8 @@
           You Grow
         </h1>
         <p class="intro-text">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et dolor
-          perferendis odio, assumenda harum!
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. assumenda
+          perferendis Ipsam numquam harum!
         </p>
         <button class="cta-btn btn btn-start">
           <a href="#pricing">Get Started Now</a>
@@ -105,7 +110,7 @@
         </article>
         <article class="feature">
           <img src="img/database.svg" class="feature-image" alt="customer" />
-          <h3 class="feature-description">99.99% Uptime Guarantee</h3>
+          <h3 class="feature-description">99.99% Server Uptime Guarantee</h3>
         </article>
         <article class="feature">
           <img
@@ -149,7 +154,7 @@
           <h3 class="heading-tertiary">
             Let us handle your digital growth
           </h3>
-          <p class="intro-text">
+          <p class="description">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et dolor
             perferendis odio, assumenda harum cumque?
           </p>
@@ -163,7 +168,7 @@
           <h3 class="heading-tertiary text-semi-bold">
             Your savings are assured!
           </h3>
-          <p class="intro-text">
+          <p class="description">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et dolor
             perferendis odio, assumenda harum cumque?
           </p>
@@ -175,7 +180,7 @@
           <h3 class="heading-tertiary text-semi-bold">
             We ensure secure access to your services
           </h3>
-          <p class="intro-text">
+          <p class="description">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et dolor
             perferendis odio, assumenda harum cumque?
           </p>
@@ -189,13 +194,21 @@
           <h3 class="heading-tertiary text-semi-bold">
             You choose, Your plan
           </h3>
-          <p class="intro-text">
+          <p class="description">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et dolor
             perferendis odio, assumenda harum cumque?
           </p>
         </div>
       </div>
     </section>
+
+    <iframe
+      id="video"
+      height="315"
+      src="https://www.youtube.com/embed/nnt8DWGVwmE"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
 
     <section id="pricing">
       <h2 class="heading-secondary text-center text-bold">
@@ -259,7 +272,7 @@
         perferendis odio, assumenda harum cumque?
       </p>
       <div class="contact-details">
-        <form id="contact-form">
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
           <img src="./img/mail.svg" class="contact-image" />
           <input
             type="email"
