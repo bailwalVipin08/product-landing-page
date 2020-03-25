@@ -301,6 +301,13 @@ body {
   cursor: pointer;
   order: 2;
 }
+
+@media(max-width: 37.5em) {
+ .toggle-btn {
+  font-size: 3rem;
+  }
+}
+
 .toggle-btn:focus,
 .toggle-btn:active {
   outline: none;
