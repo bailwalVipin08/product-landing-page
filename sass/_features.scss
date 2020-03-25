@@ -1,6 +1,6 @@
 #features {
   width: 100%;
-  padding: 9rem;
+  padding: 8rem 2rem;
   display: flex;
   flex-direction: column;
 
@@ -13,6 +13,7 @@
     gap: 0.5rem;
     align-items: center;
     justify-items: center;
+    padding: 2rem 8rem;
 
     .feature {
       box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.5);
@@ -31,6 +32,7 @@
 
       &-description {
         font-size: 1.6rem;
+        color: $color-grey-2;
       }
 
       &:hover {
